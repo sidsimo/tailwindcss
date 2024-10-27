@@ -46,6 +46,7 @@ header nav ul {
 }
 header nav ul li {
     list-style-type: none;
+    transition-duration: 0.3s;
 }
 header nav ul li a {
     text-decoration: none;
@@ -407,6 +408,10 @@ code {
     margin-bottom: 1rem;
     animation: trans 4s linear infinite;
 }
+#points {
+    display: none;
+    transition-duration: 0.3s;
+}
 @keyframes trans {
     0% {
         transform: translateY(-20px);
@@ -419,3 +424,54 @@ code {
 #btn:hover {
     background-color: rgba(255, 255, 255, 0.226);
 }
+
+@media (min-width:500px) and (max-width : 980px) {
+    #para1 {
+        font-size: 50px;
+    }
+}
+@media (min-width:500px) and (max-width : 890px) {
+    #para1 {
+        font-size: 45px;
+    }
+}
+@media (min-width:500px) and (max-width : 780px) {
+    #para1 {
+        font-size: 40px;
+    }
+}
+@media (min-width:500px) and (max-width : 690px) {
+    #para1 {
+        font-size: 35px;
+    }
+}
+@media (min-width:500px) and (max-width : 740px) {
+    #para1 {
+        font-size: 35px;
+        line-height: 2.2rem;
+    }
+    #para2 {
+        padding: 0 2.5rem;
+    }
+}
+@media (min-width:500px) and (max-width : 590px) {
+    #para1 {
+        padding: 0 0.5rem;
+    }
+}
+@media (min-width:500px) and (max-width : 767px) {
+   header nav ul li ,  #img {
+    display: none;
+   }
+   #points {
+    display: block;
+   }
+}
+@media (min-width:500px) and (max-width : 640px) {
+    .btns button:nth-child(2) {
+        display: none;
+    }
+    .btns button:nth-child(1) {
+        width: 28rem;
+    }
+ }
