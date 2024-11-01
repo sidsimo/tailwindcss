@@ -53,6 +53,11 @@ header nav ul li a {
     color: rgb(226 232 240);
     font-weight: 600;
     font-size: 14px;
+    transition-duration: 0.3s;
+}
+
+header nav ul li a:hover {
+    color: rgb(100, 167, 255);
 }
 .title h1 {
     font-weight: 500;
@@ -424,54 +429,148 @@ code {
 #btn:hover {
     background-color: rgba(255, 255, 255, 0.226);
 }
-
-@media (min-width:500px) and (max-width : 980px) {
-    #para1 {
-        font-size: 50px;
-    }
+#footer {
+    margin-top: 10rem;
+    background-color: rgba(6, 28, 48, 0.281);
+    padding-top: 2rem;
+    width: 100%;
+    height: auto;
 }
-@media (min-width:500px) and (max-width : 890px) {
-    #para1 {
-        font-size: 45px;
-    }
+#foot {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    margin: 0 1rem;
+    gap: 5rem;
 }
-@media (min-width:500px) and (max-width : 780px) {
+#foot h4 {
+    margin-bottom: 1rem;
+}
+#foot ul li {
+    list-style-type: none;
+    margin-bottom: 0.5rem;
+}
+#foot ul li a{
+   color: rgba(226, 232, 240, 0.616);
+   text-decoration: none;
+   font-weight: 500;
+   font-size: 12px;
+}
+#last {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+#parent {
+    width: 100%;
+}
+#hr {
+    width: inherit;
+    margin: auto;
+    border-top: 1px solid rgba(226, 232, 240, 0.26);
+    margin-bottom: 1rem;
+}
+#def {
+    display: flex;
+    gap: 1rem;
+    margin-left: 1rem;
+}
+#def h1 {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+#points {
+    display: none;
+}
+#hidshow {
+    width: 180px;
+    height: 210px;
+    background-color: rgba(48, 48, 48, 0.616);
+    text-align: center;
+    border-radius: 0.5rem;
+    position: absolute;
+    right: -100%;
+    top: 4rem;
+    transition-duration: 0.2s;
+}
+#hidshow nav {
+    padding-top: 2.5rem;
+}
+#hidshow nav ul {
+    margin-bottom: 1rem;
+}
+#hidshow nav ul li {
+    list-style-type: none;
+    margin-bottom: 0.3rem;
+}
+#hidshow nav ul li a {
+    text-decoration: none;
+    color: rgb(226 232 240);
+    transition-duration: 0.3s;
+}
+#hidshow nav ul li a:hover {
+    color: rgb(100, 167, 255);
+}
+#hidshow i {
+    font-size:30px;
+    margin-top: 0.5rem;
+    position: absolute;
+    right: 0.5rem;
+}
+.ico {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+}
+/* Samsung Galaxy S20 */
+@media (max-width : 360px) {
+    header nav ul , .icons #img {
+        display: none;
+    }
+    #points {
+        display: block;
+    }
     #para1 {
         font-size: 40px;
-    }
-}
-@media (min-width:500px) and (max-width : 690px) {
-    #para1 {
-        font-size: 35px;
-    }
-}
-@media (min-width:500px) and (max-width : 740px) {
-    #para1 {
-        font-size: 35px;
-        line-height: 2.2rem;
+        margin: 0 1.2rem;
+        margin-bottom: 1rem;
     }
     #para2 {
-        padding: 0 2.5rem;
+        margin: 0 1rem;
+        margin-bottom: 1rem;
     }
-}
-@media (min-width:500px) and (max-width : 590px) {
-    #para1 {
-        padding: 0 0.5rem;
+    .btns button:nth-child(1) {
+       width: 300px;
     }
-}
-@media (min-width:500px) and (max-width : 767px) {
-   header nav ul li ,  #img {
-    display: none;
-   }
-   #points {
-    display: block;
-   }
-}
-@media (min-width:500px) and (max-width : 640px) {
     .btns button:nth-child(2) {
         display: none;
     }
-    .btns button:nth-child(1) {
-        width: 28rem;
+    #text h1 {
+        font-size: 40px;
+        margin: 0 0.5rem;
     }
- }
+    #text p {
+        font-size: 16px;
+        margin: 0 0.8rem;
+        margin-bottom: 0.5rem;
+    }
+    #cards1 #figure2 {
+        height: 240px;
+    }
+    #cards1 #figure3 {
+        height: 185px;
+    }
+    #cards2 #figure4 {
+        height: 260px;
+    }
+    #cards2 #figure6 {
+        height: 220px;
+    }
+    #foot {
+        gap: 1.2rem;
+    }
+}
+
