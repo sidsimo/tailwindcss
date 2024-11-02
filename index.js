@@ -7,9 +7,8 @@ const hidshow = document.getElementById("hidshow");
 btn.addEventListener("click" , function () {
 });
 points.onclick = function() {
-    hidshow.style.right = "0.8rem";
+    hidshow.style.display = "block";
 }
 x.onclick = function() {
-    hidshow.style.right = "-100%";
+    hidshow.style.display = "none";
 }
-window.alert("Welcome you in my web");

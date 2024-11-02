@@ -492,9 +492,10 @@ code {
     text-align: center;
     border-radius: 0.5rem;
     position: absolute;
-    right: -100%;
+    right: 0.5rem;
     top: 4rem;
     transition-duration: 0.2s;
+    display: none;
 }
 #hidshow nav {
     padding-top: 2.5rem;
@@ -519,6 +520,7 @@ code {
     margin-top: 0.5rem;
     position: absolute;
     right: 0.5rem;
+    cursor: pointer;
 }
 .ico {
     display: flex;
@@ -561,7 +563,7 @@ code {
         margin-bottom: 0.5rem;
     }
     #cards1 #figure2 {
-        height: 240px;
+        height: 220px;
     }
     #cards1 #figure3 {
         height: 185px;
