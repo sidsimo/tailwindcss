@@ -5,7 +5,6 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 body {
-    width: 100%;
     height: auto;
     background-image: linear-gradient(to bottom right, rgb(24 39 51), rgb(0 15 24), rgb(45 25 25));
     /* background-image: linear-gradient(to bottom right , rgb(4, 20, 31) , rgb(5, 44, 70)); */

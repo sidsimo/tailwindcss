@@ -12,3 +12,6 @@ points.onclick = function() {
 x.onclick = function() {
     hidshow.style.display = "none";
 }
+document.body.scroll({
+    behavior : "smooth"
+});
