@@ -6,7 +6,7 @@
 }
 body {
     height: auto;
-    background-image: linear-gradient(to bottom right, rgb(24 39 51), rgb(0 15 24), rgb(45 25 25));
+    background-image: linear-gradient(to bottom right, rgb(24 39 51), rgb(2, 21, 39), rgb(45 25 25));
     /* background-image: linear-gradient(to bottom right , rgb(4, 20, 31) , rgb(5, 44, 70)); */
     color: aliceblue;
 }
@@ -123,6 +123,24 @@ code {
     font-weight: 500;
     cursor: pointer;
     transition-duration: 0.3s;
+}
+#btnx {
+    padding: 15px;
+    border-radius: 0.5rem;
+    background-color: rgb(51 65 85);
+    border: none;
+    color: rgba(240, 248, 255, 0.856);
+    width: 12rem;
+    height: 3rem;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    display: none;
+    margin: auto;
+    box-shadow: 0 0 100px rgb(255, 139, 139);
+    margin-bottom: 1rem;
+    animation: trans 4s linear infinite;
 }
 #bflex {
     display: flex;
@@ -381,14 +399,12 @@ code {
 }
 
 #cards3 {
-    display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     display: none;
 }
 #cards4 {
-    display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -483,6 +499,7 @@ code {
 }
 #points {
     display: none;
+    cursor: pointer;
 }
 #hidshow {
     width: 180px;
@@ -530,7 +547,7 @@ code {
     color: rgba(226, 232, 240, 0.863);
 }
 /* Samsung Galaxy S20 */
-@media (max-width : 412px) {
+@media (max-width : 900px) {
     header nav ul , .icons #img {
         display: none;
     }
