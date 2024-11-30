@@ -10,6 +10,30 @@ body {
     /* background-image: linear-gradient(to bottom right , rgb(4, 20, 31) , rgb(5, 44, 70)); */
     color: aliceblue;
 }
+.alert {
+   background-color: rgba(30, 143, 255, 0.315);
+   text-align: justify;
+   font-family: sans-serif;
+   height: 50px;
+   display: flex;
+   justify-content: space-between;
+   padding-left: 2rem;
+   padding-right: 1rem;
+   align-items: center;
+   transition-duration: 0.3s;
+}
+#close {
+    font-size: 30px;
+    cursor: pointer;
+}
+.link {
+    color: rgb(30, 203, 255);
+}
+.alert p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffffea;
+}
 header {
     padding-top: 1rem;
 }
@@ -64,6 +88,7 @@ header nav ul li a:hover {
 .icons img {
     width: 23px;
     height: 23px;
+    cursor: pointer;
 }
 #main {
     width: 100%;
@@ -80,14 +105,17 @@ header nav ul li a:hover {
 }
 
 #para2 {
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 19px;
+    font-weight: 500;
     color: rgb(226 232 240);
     line-height: 1.8rem;
     margin-bottom: 3rem;
 }
 code {
     color: rgb(56 189 248);
+}
+#element {
+    color: rgb(72, 200, 255);
 }
 .btns button:nth-child(1) {
     padding: 10px;
@@ -142,6 +170,9 @@ code {
     margin-bottom: 1rem;
     animation: trans 4s linear infinite;
 }
+#btnx:hover {
+    background-color: rgba(51, 65, 85, 0.658);
+}
 #bflex {
     display: flex;
     justify-content: flex-start;
@@ -167,7 +198,7 @@ code {
     font-size: 45px;
     margin-bottom: 1rem;
 }
-#text p {
+#text h2 {
     font-size: 18px;
     font-weight: 500;
     color: rgba(226, 232, 240, 0.842);
@@ -195,6 +226,8 @@ code {
     padding: 1.5rem;
     border-radius: 0.5rem;
     color: rgb(226 232 240);
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.7s;
 }
 #figure1 figcaption {
     display: flex;
@@ -228,6 +261,8 @@ code {
     padding: 1.5rem;
     border-radius: 0.5rem;
     color: rgb(226 232 240);
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.7s;
 }
 #figure2 figcaption {
     display: flex;
@@ -261,6 +296,8 @@ code {
     padding: 1.5rem;
     border-radius: 0.5rem;
     color: rgb(226 232 240);
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.7s;
 }
 #figure3 figcaption {
     display: flex;
@@ -294,6 +331,8 @@ code {
     padding: 1.5rem;
     border-radius: 0.5rem;
     color: rgb(226 232 240);
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.7s;
 }
 #figure4 figcaption {
     display: flex;
@@ -327,6 +366,8 @@ code {
     padding: 1.5rem;
     border-radius: 0.5rem;
     color: rgb(226 232 240);
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.7s;
 }
 #figure5 figcaption {
     display: flex;
@@ -360,6 +401,8 @@ code {
     padding: 1.5rem;
     border-radius: 0.5rem;
     color: rgb(226 232 240);
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.7s;
 }
 #figure6 figcaption {
     display: flex;
@@ -384,7 +427,6 @@ code {
     font-weight: 500;
     font-size: 15px;
 }
-
 #cards1 {
     display: flex;
     justify-content: center;
@@ -442,7 +484,7 @@ code {
     }
 }
 #btn:hover {
-    background-color: rgba(255, 255, 255, 0.226);
+    background-color: rgba(51, 65, 85, 0.658);
 }
 #footer {
     margin-top: 10rem;
@@ -452,10 +494,10 @@ code {
     height: auto;
 }
 #foot {
-    display: flex;
-    justify-content: center; 
+    display:flex;
+    justify-content: center;
     flex-wrap: wrap; 
-    margin: 0 1rem;
+    margin: 0 0.5rem;
     gap: 5rem;
 }
 #foot h4 {
@@ -494,8 +536,9 @@ code {
     margin-left: 1rem;
 }
 #def h1 {
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 1px;
+    color: aliceblue;
 }
 #points {
     display: none;
@@ -541,12 +584,21 @@ code {
 .ico {
     display: flex;
     justify-content: center;
+    align-items: baseline;
     gap: 0.8rem;
 }
-#def h1 {
-    color: rgba(226, 232, 240, 0.863);
+
+#ulist ul li a {
+    transition-duration: 0.3s;
 }
-/* Samsung Galaxy S20 */
+#ulist ul li a:hover{
+    text-decoration: underline;
+}
+#section figure:hover {
+    background-color: #205b8f96;
+    box-shadow: 0 0 15px #205b8f96;
+}
+/* MEDIA QUERIES IN CASCADING STYLE SHEETS 3 */
 @media (max-width : 900px) {
     header nav ul , .icons #img {
         display: none;
@@ -555,7 +607,7 @@ code {
         display: block;
     }
     #para1 {
-        font-size: 40px;
+        font-size:45px;
         margin: 0 1.2rem;
         margin-bottom: 1rem;
     }
@@ -564,16 +616,13 @@ code {
         margin-bottom: 1rem;
     }
     .btns button:nth-child(1) {
-       width: 300px;
-    }
-    .btns button:nth-child(2) {
-        display: none;
+       width: 200px;
     }
     #text h1 {
         font-size: 40px;
         margin: 0 0.5rem;
     }
-    #text p {
+    #text h2 {
         font-size: 16px;
         margin: 0 0.8rem;
         margin-bottom: 0.5rem;
@@ -590,8 +639,101 @@ code {
     #cards2 #figure6 {
         height: 200px;
     }
-    #foot {
-        gap: 1.2rem;
+}
+
+@media (max-width : 780px) {
+    .btns button:nth-child(2) {
+        display: none;
+    }
+    .btns button:nth-child(1) {
+        width: 300px;
+    }
+    #para1 {
+        font-size:40px;
+    }
+    #text h1 {
+        font-size: 35px;
+    }
+    #text p {
+        font-size: 14px;
+    }
+}
+figure:hover {
+    cursor: pointer;
+    transform: translateY(-50px);
+}
+
+@media (max-width: 320px) {
+    #cards1 #figure2 {
+        height: 250px;
+    }
+    #cards1 #figure3 {
+        height: 205px;
+    }
+    #cards2 #figure4 {
+        height: 300px;
+    }
+    #cards2 #figure5 {
+        height: 180px;
+    }
+    #cards2 #figure6 {
+        height: 220px;
+    }
+    #cards3 #figure4 {
+        height: 230px;
+    }
+    #cards3 #figure5 {
+        height: 180px;
+    }
+    #cards3 #figure6 {
+        height: 230px;
+    }
+    #cards4 #figure4 {
+        height: 300px;
+    }
+    #cards4 #figure6 {
+        height: 230px;
     }
 }
 
+@media (max-width: 360px) {
+    #cards3 #figure5 {
+        height: 150px;
+    }
+    #cards2 #figure6 {
+        height: 220px;
+    }
+    #cards1 #figure2 {
+        height: 240px;
+    }
+}
+
+@media (max-width: 375px) {
+    #cards4 #figure4 {
+        height: 270px;
+    }
+    #cards3 #figure6 {
+        height: 220px;
+    }
+    #cards3 #figure4 {
+        height: 230px;
+    }
+    #cards4 #figure6 {
+        height: 220px;
+    }
+}
+@media (max-width: 390px) {
+    #foot {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 880px) {
+    #foot {
+        display: block;
+        text-align: center;
+    }
+    #foot #ulist {
+        font-size: 20px;
+    }
+}

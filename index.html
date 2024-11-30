@@ -11,10 +11,14 @@
     <meta name="author" content="Jems Divin"/>
     <meta name="theme-color" content=""/>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-     <!-- Load library from the CDN -->
+    <!-- Load library from the CDN -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
 <body>
+    <div class="alert">
+        <p>Hello! Welcome you in our website click here for more our projects on github <a href="https://sidsimo.github.io" class="link">click here</a></p>
+        <i class='bx bx-x' id="close"></i>
+    </div>
     <header>
         <nav>
             <div class="title">
@@ -31,7 +35,7 @@
                 </ul>
             </div>
             <div class="icons">
-                <a href="https://" target="_blank" title="moon" id="img"><img src="images/moon-regular-24.png" alt=""></a>
+                <img src="images/moon-regular-24.png" alt="" id="img">
                 <a href="https://github.com/tailwindlabs/tailwindcss" target="_blank" title="github" id="img"><img src="images/github-logo-24.png" alt=""></a>
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAH1JREFUSEvtlMEJgEAMBGfrEASxIJvxYwdiQZYjChbhLyLc0+PyuAPBy3vZDZMlovCosD8/CjCzAZgBA0ZJqwevG5GZnUATTDdJfe6AA2iD6S6pyx3wIFqAC5iyI/Js+6Zx36B4QG1REnFAVFsUJ1VbVFsUJfCdZ5c8UkRwAyNvQhkv+YgoAAAAAElFTkSuQmCC" id="points"/>
             </div>
@@ -49,7 +53,7 @@
             </ul>
         </nav>
         <div class="ico">
-            <a href="https://" target="_blank" title="moon" id="icon"><img src="images/moon-regular-24.png" alt=""></a>
+            <img src="images/moon-regular-24.png" alt="" id="icon">
             <a href="https://github.com/tailwindlabs/tailwindcss" target="_blank" title="github" id="icon"><img src="images/github-logo-24.png" alt=""></a>
         </div>
     </div>
@@ -81,12 +85,12 @@
     <section id="section">
         <div id="text">
             <h1>“Best practices” don’t actually work.</h1>
-            <p>
+            <h2>
                 I’ve written <code>a few thousand words</code> on why traditional “semantic class names” are the <br>
                 reason CSS is hard to maintain, but the truth is you’re never going to believe me until you <br>
                 actually try it. If you can suppress the urge to retch long enough to give it a chance, I really <br>
                 think you’ll wonder how you ever worked with CSS any other way.
-            </p>
+            </h2>
         </div>
         <div id="card">
             <img src="images/adam.jpg" alt="">
@@ -300,7 +304,8 @@
     // Setup and start animation!
     var typed = new Typed('#element', {
         strings: ['your HTML.','your HTML5.'],
-        typeSpeed: 50,
+        typeSpeed: 40,
+        backSpeed : 40,
         loop : true
     });
     </script>

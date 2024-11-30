@@ -7,6 +7,7 @@ const btnx = document.getElementById("btnx");
 const points = document.getElementById("points");
 const x = document.getElementById("x");
 const hidshow = document.getElementById("hidshow");
+const close = document.getElementById("close");
 btn.addEventListener("click" , function () {
 });
 points.onclick = function() {
@@ -30,4 +31,13 @@ btnx.onclick = function () {
     cards4.style.display = "none";
     btnx.style.display = "none";
     btn.style.display = "block";
+}
+
+close.onclick = function() {
+    document.querySelector(".alert").style.display = "none";
+}
+if(navigator.userAgent.toLocaleLowerCase().includes("android")) {
+    document.querySelector(".alert").style.display = "flex";
+}else {
+    document.querySelector(".alert").style.display = "none";
 }
